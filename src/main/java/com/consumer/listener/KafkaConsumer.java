@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class KafkaConsumer {
 
-    @KafkaListener(topics = "restaurant", groupId = "group_json", containerFactory = "userKafkaListenerFactory")
+    @KafkaListener(topics = "d11c6f80-5482-404c-a166-775517a40bd5", groupId = "group_json", containerFactory = "userKafkaListenerFactory")
     public void consumeUser(@Payload User user, @Headers MessageHeaders headers) {
         System.out.println("Consumed JSON Message: " + user.toString());
     }
