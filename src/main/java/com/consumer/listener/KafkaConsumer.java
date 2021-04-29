@@ -14,7 +14,4 @@ public class KafkaConsumer {
     public void consumeUser(@Payload User user, @Headers MessageHeaders headers) {
         System.out.println("Consumed JSON Message: " + user.toString());
     }
-
-
-
 }
